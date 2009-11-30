@@ -1,0 +1,28 @@
+<h1>Listing kontakts</h1>
+
+<table>
+  <tr>
+    <th>Imie</th>
+    <th>Nazwisko</th>
+    <th>Telefon</th>
+    <th>Gg</th>
+    <th>Email</th>
+  </tr>
+
+<% for kontakt in @kontakts %>
+  <tr>
+    <td><%=h kontakt.imie %></td>
+    <td><%=h kontakt.nazwisko %></td>
+    <td><%=h kontakt.telefon %></td>
+    <td><%=h kontakt.gg %></td>
+    <td><%=h kontakt.email %></td>
+    <td><%= link_to 'Show', kontakt %></td>
+    <td><%= link_to 'Edit', edit_kontakt_path(kontakt) %></td>
+    <td><%= link_to 'Destroy', kontakt, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New kontakt', new_kontakt_path %>

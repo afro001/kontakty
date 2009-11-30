@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>refreshed</title>
+<meta content="text/HTML; charset=UTF-8" http-equiv="Content-Type" />
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <%= javascript_include_tag :all %>
+  <%= yield(:head) %>
+</head>
+<body>
+<div class="header">
+  <h1>refreshed</h1>
+  <div class="nav"><%= yield(:menu) || render_or_default('menu') %></div>
+</div>
+<div class="upperleft">
+  <div class="upperright">
+    <div class="lowerleft">
+      <div class="lowerright"><%= yield %></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

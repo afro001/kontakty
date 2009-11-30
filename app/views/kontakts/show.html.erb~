@@ -1,0 +1,31 @@
+
+
+
+<p>
+  <b>Imie:</b>
+  <%=h @kontakt.imie %>
+</p>
+
+<p>
+  <b>Nazwisko:</b>
+  <%=h @kontakt.nazwisko %>
+</p>
+
+<p>
+  <b>Telefon:</b>
+  <%=h @kontakt.telefon %>
+</p>
+
+<p>
+  <b>Gg:</b>
+  <%=h @kontakt.gg %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @kontakt.email %>
+</p>
+
+<%= gravatar_image_tag(@kontakt.email, :alt => @kontakt.imie) %>
+<%= link_to 'Edit', edit_kontakt_path(@kontakt) %> |
+<%= link_to 'Back', kontakts_path %>
