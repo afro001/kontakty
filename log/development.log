@@ -4867,3 +4867,11 @@ Rendering template within layouts/kontakts
 Rendering kontakts/show
 Rendered layouts/_menu (0.2ms)
 Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/kontakts/1]
+
+
+Processing KontaktsController#index (for 127.0.0.1 at 2009-12-02 12:42:58) [GET]
+  [4;36;1mKontakt Load (1.4ms)[0m   [0;1mSELECT * FROM "kontakts" [0m
+Rendering template within layouts/kontakts
+Rendering kontakts/index
+Rendered layouts/_menu (0.3ms)
+Completed in 140ms (View: 121, DB: 1) | 200 OK [http://localhost/kontakts/]
