@@ -4850,3 +4850,20 @@ Rendering template within layouts/kontakts
 Rendering kontakts/show
 Rendered layouts/_menu (0.2ms)
 Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/kontakts/1]
+
+
+Processing KontaktsController#index (for 127.0.0.1 at 2009-11-30 18:43:47) [GET]
+  [4;36;1mKontakt Load (0.8ms)[0m   [0;1mSELECT * FROM "kontakts" [0m
+Rendering template within layouts/kontakts
+Rendering kontakts/index
+Rendered layouts/_menu (0.2ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/kontakts/]
+
+
+Processing KontaktsController#show (for 127.0.0.1 at 2009-11-30 18:43:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKontakt Load (0.4ms)[0m   [0mSELECT * FROM "kontakts" WHERE ("kontakts"."id" = 1) [0m
+Rendering template within layouts/kontakts
+Rendering kontakts/show
+Rendered layouts/_menu (0.2ms)
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/kontakts/1]
